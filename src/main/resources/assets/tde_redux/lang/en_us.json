@@ -1,5 +1,9 @@
 {
-    "item.tde_redux.fossil": "Fossil",
+    "item.tde_redux.fossil_item": "Fossil",
+
+    "block.tde_redux.fossil_ore": "Fossil Ore",
+    "block.tde_redux.deepslate_fossil_ore": "Deepslate Fossil Ore",
+
     "item.tde_redux.dna_tyrannosaurus": "Tyrannosaurus Rex DNA",
     "item.tde_redux.dna_triceratops": "Triceratops DNA",
     "item.tde_redux.dna_struthiomimus": "Struthiomimus DNA",

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "tde_redux:block/deepslate_fossil_ore"
+        }
+    }
+}

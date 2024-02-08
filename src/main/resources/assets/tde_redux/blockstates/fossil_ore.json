@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "tde_redux:block/fossil_ore"
+        }
+    }
+}

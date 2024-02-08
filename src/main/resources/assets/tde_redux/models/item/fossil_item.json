@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "tde_redux:item/fossil"
+        "layer0": "tde_redux:item/fossil_item"
     }
 }

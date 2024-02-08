@@ -2,6 +2,7 @@ package com.ceetron.Redux;
 
 import com.ceetron.Redux.core.registry.ReduxCreativeModeTabs;
 import com.ceetron.Redux.core.registry.ReduxItems;
+import com.ceetron.Redux.core.registry.ReduxBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -47,6 +48,7 @@ public class Redux
 
         ReduxCreativeModeTabs.register(modEventBus);
         ReduxItems.register(modEventBus);
+        ReduxBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
