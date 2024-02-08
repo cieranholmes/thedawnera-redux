@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tde_redux:item/dna_struthiomimus"
+    }
+}

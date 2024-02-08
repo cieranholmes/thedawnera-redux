@@ -1,5 +1,7 @@
-package net.ceetron.TheDawnEraRedux;
+package com.ceetron.Redux;
 
+import com.ceetron.Redux.core.registry.ReduxCreativeModeTabs;
+import com.ceetron.Redux.core.registry.ReduxItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -30,18 +32,21 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(TheDawnEraRedux.MOD_ID)
-public class TheDawnEraRedux
+@Mod(Redux.MOD_ID)
+public class Redux
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "thedawnera_redux";
+    public static final String MOD_ID = "tde_redux";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public TheDawnEraRedux()
+    public Redux()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ReduxCreativeModeTabs.register(modEventBus);
+        ReduxItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
