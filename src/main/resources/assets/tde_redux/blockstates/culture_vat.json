@@ -1,0 +1,39 @@
+{
+    "variants": {
+      "half=lower,facing=north": {
+        "model": "tde_redux:block/culture_vat"
+  
+      },
+      "half=upper,facing=north": {
+        "model": "tde_redux:block/culture_vat_top"
+      },
+      "half=lower,facing=east": {
+        "model": "tde_redux:block/culture_vat",
+        "y": 90
+  
+      },
+      "half=upper,facing=east": {
+        "model": "tde_redux:block/culture_vat_top",
+        "y": 90
+  
+      },
+      "half=lower,facing=south": {
+        "model": "tde_redux:block/culture_vat",
+        "y": 180
+  
+      },
+      "half=upper,facing=south": {
+        "model": "tde_redux:block/culture_vat_top",
+        "y": 180
+      },
+      "half=lower,facing=west": {
+        "model": "tde_redux:block/culture_vat",
+        "y": 270
+  
+      },
+      "half=upper,facing=west": {
+        "model": "tde_redux:block/culture_vat_top",
+        "y": 270
+      }
+    }
+  }

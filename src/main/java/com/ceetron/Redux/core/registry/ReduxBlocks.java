@@ -3,6 +3,7 @@ package com.ceetron.Redux.core.registry;
 import java.util.function.Supplier;
 
 import com.ceetron.Redux.Redux;
+import com.ceetron.Redux.common.block.entity.CultureVatBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,9 @@ public class ReduxBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> DEEPSLATE_FOSSIL_ORE = registerBlock("deepslate_fossil_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> CULTURE_VAT = registerBlock("culture_vat",
+            () -> new CultureVatBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
