@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_all",
+	"render_type": "minecraft:translucent",
+	"textures": {
+		"all": "tde_redux:block/no_texture_block",
+		"particle": "tde_redux:block/culture_vat"
+	}
+}
